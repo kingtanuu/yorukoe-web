@@ -353,7 +353,7 @@ aBU(a){var s,r,q=a.graphemeLayoutBounds,p=B.b.dw(q,t.i)
 q=p.a
 s=J.bD(q)
 r=p.$ti.y[1]
-return new A.mg(new A.o(r.a(s.i(q,0)),r.a(s.i(q,1)),r.a(s.i(q,2)),r.a(s.i(q,3))),new A.bn(J.ae(a.graphemeClusterTextRange.start),J.ae(a.graphemeClusterTextRange.end)),B.lx[J.ae(a.dir.value)])},
+return new A.mg(new A.o(r.a(s.i(q,0)),r.a(s.i(q,1)),r.a(s.i(q,2)),r.a(s.i(q,3))),new A.bn(J.ae(a.graphemeClusterTextRange.start),J.ae(a.graphemeClusterTextRange.end)),B.ly[J.ae(a.dir.value)])},
 aSj(a){var s,r="chromium/canvaskit.js"
 switch(a.a){case 0:s=A.b([],t.s)
 if(A.aEz())s.push(r)
@@ -26148,10 +26148,11 @@ avx(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q){return new A.yO(i,j,k,m,g,b,e,q,d,f,c,p,o
 aKA(a5){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a="scenarioId",a0="bedResult",a1="bedtimeAt",a2="wakeResult",a3=A.yl(B.Pn,A.bk(a5.i(0,"phase"))),a4=A.bY(a5.i(0,"playerName"))
 if(a4==null)a4=""
 s=A.bY(a5.i(0,a))
-if(s==null)s="sayo"
+if(s==null||s==="sayo")s="yuuka"
 r=A.bY(a5.i(0,"selectedScenarioId"))
-if(r==null){r=A.bY(a5.i(0,a))
-if(r==null)r="sayo"}q=A.dA(a5.i(0,"episode"))
+if(r==null)r=A.bY(a5.i(0,a))
+if(r==null||r==="sayo")r="yuuka"
+q=A.dA(a5.i(0,"episode"))
 if(q==null)q=1
 p=A.dA(a5.i(0,"affection"))
 if(p==null)p=0
@@ -26252,7 +26253,7 @@ _.a=a
 _.b=b
 _.c=c
 _.d=d},
-acA(a){return B.b.UQ(B.ly,new A.acB(a),new A.acC())},
+acA(a){return B.b.UQ(B.lx,new A.acB(a),new A.acC())},
 hq:function hq(a,b,c,d,e,f,g,h,i,j){var _=this
 _.a=a
 _.b=b
@@ -28411,7 +28412,7 @@ Kj(a){var s,r,q,p,o,n,m,l=A.b([],t.Lx)
 for(s=a.a,r=J.bD(s),q=a.$ti.y[1],p=0;p<r.gH(s);++p){o=q.a(r.i(s,p))
 n=o.rect
 m=J.ae(o.dir.value)
-l.push(new A.e3(n[0],n[1],n[2],n[3],B.lx[m]))}return l},
+l.push(new A.e3(n[0],n[1],n[2],n[3],B.ly[m]))}return l},
 cT(a){var s,r,q=this.a
 q===$&&A.a()
 s=q.a.getGlyphPositionAtCoordinate(a.a,a.b)
@@ -35190,7 +35191,7 @@ o=A.dz(s.i(0,"textAlignIndex"))
 n=A.dz(s.i(0,"textDirectionIndex"))
 m=A.dA(s.i(0,"fontWeightIndex"))
 l=m!=null?A.axt(m):"normal"
-p=new A.agu(new A.a2s(A.a5x(s,"fontSize"),l,A.bY(s.i(0,"fontFamily")),B.Oj[o],B.lx[n],A.a5x(s,"letterSpacing"),A.a5x(s,"wordSpacing"),A.a5x(s,"lineHeight")))
+p=new A.agu(new A.a2s(A.a5x(s,"fontSize"),l,A.bY(s.i(0,"fontFamily")),B.Oj[o],B.ly[n],A.a5x(s,"letterSpacing"),A.a5x(s,"wordSpacing"),A.a5x(s,"lineHeight")))
 break
 case"TextInput.clearClient":p=B.Es
 break
@@ -87091,7 +87092,7 @@ A.acB.prototype={
 $1(a){return a.a===this.a},
 $S:534}
 A.acC.prototype={
-$0(){return B.b.ga0(B.ly)},
+$0(){return B.b.ga0(B.lx)},
 $S:535}
 A.wE.prototype={
 ab(){return new A.D2(B.k)},
@@ -87573,7 +87574,7 @@ A.ND.prototype={
 E(a){var s=null,r=a.ai(t._).f,q=t.p,p=A.b([new A.up(B.HU,new A.Oo(A.bl(A.b([B.Vu,B.bu,B.a2F,B.bu,A.az(r.b.b+"\u3055\u3093\u306e\u4e03\u65e5\u9593\u304c\u3001\u3053\u3053\u304b\u3089\u59cb\u307e\u308a\u307e\u3059\u3002",s,s,s,B.dI,s,s,s)],q),B.U,B.m,B.o,0,B.x),s),s),new A.up(B.HD,new A.Ol(B.Er,new A.afe(new A.acO(r),6),s),s)],q)
 return A.bU(s,A.fk(!1,A.bl(A.b([A.bQ(new A.Jz(p,B.b4,!1,s,s,B.nt,s,!1,s,0,s,s,s,B.Bb,B.a1,s,s,B.O,B.a8,s),1),B.CP],q),B.r,B.m,B.o,0,B.x),!0),B.w,s,s,B.Dj,s,s,s,s,s,s,s)}}
 A.acO.prototype={
-$2(a,b){var s=B.ly[b]
+$2(a,b){var s=B.lx[b]
 return new A.qA(s,s.z?new A.acN(this.a,s):null,null)},
 $S:546}
 A.acN.prototype={
@@ -87863,7 +87864,7 @@ q.aA()
 return A.N(null,r)}})
 return A.O($async$h2,r)},
 arK(){var s=this.b
-return this.f_(A.avx(B.iV,0,0,null,s.r,null,1,B.lz,B.fj,s.b,"sayo",B.iV,"sayo",!1,0,null,s.w))},
+return this.f_(A.avx(B.iV,0,0,null,s.r,null,1,B.lz,B.fj,s.b,"yuuka",B.iV,"yuuka",!1,0,null,s.w))},
 n4(a,b){var s,r,q,p,o,n,m,l=this
 if(l.b.e>7)return
 s=Date.now()
@@ -92072,7 +92073,7 @@ B.jb=new A.b9(7,0)
 B.bR={}
 B.iV=new A.eS(B.bR,0,t.fF)
 B.lz=s([],A.as("w<h2>"))
-B.i8=new A.yO(B.lh,"","sayo","sayo",1,0,B.BU,B.jb,null,null,0,null,0,!1,B.iV,B.iV,B.lz)
+B.i8=new A.yO(B.lh,"","yuuka","yuuka",1,0,B.BU,B.jb,null,null,0,null,0,!1,B.iV,B.iV,B.lz)
 B.cc=new A.Kv(0,"accepted")
 B.aB=new A.Kv(1,"rejected")
 B.pt=new A.oO(0,"pointerEvents")
@@ -92554,6 +92555,13 @@ B.M9=new A.C(null,"\u604b\u306b\u306f\u306a\u3089\u306a\u304b\u3063\u305f\u3002"
 B.L5=new A.C(null,"\u3067\u3082\u3001\u671d\u306f\u8d77\u304d\u3089\u308c\u308b\u3088\u3046\u306b\u306a\u3063\u305f\u3002",B.k,null)
 B.LA=new A.C(null,"\u660e\u65e5\u3082\u3001{train}\u3002",B.k,null)
 B.OL=s([B.eb,B.Lx,B.Kx,B.Ms,B.KG,B.MI,B.M9,B.L5,B.LA],t.J)
+B.Vc=new A.hq("yuuka","\u3044\u3064\u3082\u306e\u96fb\u8eca\u306e\u541b","\u671d\u65e5 \u512a\u82b1","Asahi Yuka","yuuka","\u5f7c\u5973\u306f\u3001\u6bce\u671d\u3053\u306e\u96fb\u8eca\u306b\u3044\u308b\u3002","\u6bce\u671d\u304a\u306a\u3058\u96fb\u8eca\u3001\u304a\u306a\u3058\u5e2d\u3002\u591c\u304c\u5f31\u304f\u3066\u3001\u3044\u3064\u3082\u5bdd\u904e\u3054\u3057\u305d\u3046\u306b\u306a\u3063\u3066\u3044\u308b\u5973\u306e\u5b50\u3002\u4e03\u65e5\u306e\u3042\u3044\u3060\u3001\u3042\u306a\u305f\u304c\u8d77\u304d\u3066\u96fb\u8eca\u306b\u4e57\u308c\u305f\u3076\u3093\u3060\u3051\u3001\u5f7c\u5973\u3068\u306e\u8ddd\u96e2\u306f\u7e2e\u307e\u308b\u3002",B.aW,"",!0)
+B.Ve=new A.hq("kohaku","\u3053\u306f\u304f\u306e\u958b\u5e97\u524d","\u7425\u73c0","Kohaku","kohaku","\u671d7\u6642\u3001\u307e\u3060\u770b\u677f\u306f\u51fa\u3066\u3044\u306a\u3044\u3002","\u958b\u5e97\u524d\u306e\u30ab\u30d5\u30a7\u3067\u3001\u3053\u3063\u305d\u308a\u4e00\u676f\u3060\u3051\u6df9\u308c\u3066\u304f\u308c\u308b\u4eba\u306e\u8a71\u3002",B.bO,"\u512a\u82b1\u306e\u7269\u8a9e\u3092\u6700\u5f8c\u307e\u3067\u898b\u308b\u3068\u89e3\u653e",!1)
+B.Vb=new A.hq("nagi","\u51ea\u3068\u3001\u671d\u7df4","\u51ea","Nagi","nagi","\u516d\u6642\u306e\u30b0\u30e9\u30a6\u30f3\u30c9\u306b\u306f\u3001\u3072\u3068\u308a\u3057\u304b\u3044\u306a\u3044\u3002","\u8ab0\u3088\u308a\u3082\u65e9\u304f\u6765\u308b\u5f8c\u8f29\u3068\u3001\u671d\u306e\u30b0\u30e9\u30a6\u30f3\u30c9\u3067\u904e\u3054\u3059\u8a71\u3002",B.aQ,"\u597d\u611f\u5ea6 60 \u4ee5\u4e0a\u306e\u7d50\u672b\u306b\u5230\u9054\u3059\u308b\u3068\u89e3\u653e",!1)
+B.Vf=new A.hq("shiori","\u681e\u3068\u3001\u56f3\u66f8\u5ba4\u306e\u671d","\u681e","Shiori","shiori","\u958b\u9928\u524d\u306e\u56f3\u66f8\u5ba4\u306f\u3001\u9375\u304c\u304b\u304b\u3063\u3066\u3044\u306a\u3044\u3002","\u59cb\u696d\u524d\u306e\u56f3\u66f8\u5ba4\u3067\u3001\u3044\u3064\u3082\u540c\u3058\u5e2d\u306b\u3044\u308b\u4eba\u306e\u8a71\u3002",B.c9,"\u4e03\u65e5\u9023\u7d9a\u3067\u96fb\u8eca\u306b\u4e57\u308b\u3068\u89e3\u653e",!1)
+B.Vg=new A.hq("mio","\u6faa\u306e\u59cb\u767a","\u6faa","Mio","mio","\u59cb\u767a\u306b\u4e57\u308b\u4eba\u306b\u306f\u3001\u7406\u7531\u304c\u3042\u308b\u3002","\u8ab0\u3088\u308a\u3082\u65e9\u3044\u96fb\u8eca\u306b\u4e57\u308b\u4eba\u306e\u8a71\u3002",B.di,"TRUE END \u306b\u5230\u9054\u3059\u308b\u3068\u89e3\u653e",!1)
+B.Vd=new A.hq("akari","\u3042\u304b\u308a\u306e\u671d\u7df4","\u3042\u304b\u308a","Akari","akari","\u671d\u65e5\u3088\u308a\u65e9\u304f\u3001\u97f3\u304c\u9cf4\u3063\u3066\u3044\u308b\u3002","\u5439\u594f\u697d\u90e8\u306e\u671d\u7df4\u306b\u3001\u6bce\u671d\u3072\u3068\u308a\u3067\u6765\u308b\u4eba\u306e\u8a71\u3002",B.bO,"\u8fd1\u65e5\u516c\u958b",!1)
+B.lx=s([B.Vc,B.Ve,B.Vb,B.Vf,B.Vg,B.Vd],A.as("w<hq>"))
 B.Qs=new A.p8("en",null,"US")
 B.pX=s([B.Qs],t.ss)
 B.pY=s([0,41,61,101,131,181,251,301,360],t.n)
@@ -92600,7 +92608,7 @@ B.ad=new A.Ci(0,"upstream")
 B.P4=s([B.ad,B.l],A.as("w<Ci>"))
 B.ax=new A.Cm(0,"rtl")
 B.Q=new A.Cm(1,"ltr")
-B.lx=s([B.ax,B.Q],A.as("w<Cm>"))
+B.ly=s([B.ax,B.Q],A.as("w<Cm>"))
 B.EL=new A.od(0,"auto")
 B.EM=new A.od(1,"full")
 B.EN=new A.od(2,"chromium")
@@ -92633,13 +92641,6 @@ B.La=new A.C("\u512a\u82b1","\u307e\u305f\u3001\u3069\u3053\u304b\u3067\u3002",B
 B.Ks=new A.C(null,"\u540d\u524d\u306f\u899a\u3048\u3089\u308c\u3066\u3044\u305f\u3002\u305d\u308c\u3060\u3051\u3060\u3063\u305f\u3002",B.k,null)
 B.Mm=new A.C(null,"{train}\u306e\u96fb\u8eca\u306b\u306f\u3001\u3044\u3064\u306e\u307e\u306b\u304b\u4e57\u3089\u306a\u304f\u306a\u3063\u3066\u3044\u305f\u3002",B.k,null)
 B.Pq=s([B.N0,B.MR,B.Lv,B.Le,B.Mx,B.La,B.Ks,B.Mm],t.J)
-B.Vg=new A.hq("sayo","\u3044\u3064\u3082\u306e\u96fb\u8eca\u306e\u541b","\u671d\u65e5 \u512a\u82b1","Asahi Yuka","sayo","\u5f7c\u5973\u306f\u3001\u6bce\u671d\u3053\u306e\u96fb\u8eca\u306b\u3044\u308b\u3002","\u6bce\u671d\u304a\u306a\u3058\u96fb\u8eca\u3001\u304a\u306a\u3058\u5e2d\u3002\u591c\u304c\u5f31\u304f\u3066\u3001\u3044\u3064\u3082\u5bdd\u904e\u3054\u3057\u305d\u3046\u306b\u306a\u3063\u3066\u3044\u308b\u5973\u306e\u5b50\u3002\u4e03\u65e5\u306e\u3042\u3044\u3060\u3001\u3042\u306a\u305f\u304c\u8d77\u304d\u3066\u96fb\u8eca\u306b\u4e57\u308c\u305f\u3076\u3093\u3060\u3051\u3001\u5f7c\u5973\u3068\u306e\u8ddd\u96e2\u306f\u7e2e\u307e\u308b\u3002",B.aW,"",!0)
-B.Vd=new A.hq("kohaku","\u3053\u306f\u304f\u306e\u958b\u5e97\u524d","\u7425\u73c0","Kohaku","kohaku","\u671d7\u6642\u3001\u307e\u3060\u770b\u677f\u306f\u51fa\u3066\u3044\u306a\u3044\u3002","\u958b\u5e97\u524d\u306e\u30ab\u30d5\u30a7\u3067\u3001\u3053\u3063\u305d\u308a\u4e00\u676f\u3060\u3051\u6df9\u308c\u3066\u304f\u308c\u308b\u4eba\u306e\u8a71\u3002",B.bO,"\u512a\u82b1\u306e\u7269\u8a9e\u3092\u6700\u5f8c\u307e\u3067\u898b\u308b\u3068\u89e3\u653e",!1)
-B.Vb=new A.hq("nagi","\u51ea\u3068\u3001\u671d\u7df4","\u51ea","Nagi","nagi","\u516d\u6642\u306e\u30b0\u30e9\u30a6\u30f3\u30c9\u306b\u306f\u3001\u3072\u3068\u308a\u3057\u304b\u3044\u306a\u3044\u3002","\u8ab0\u3088\u308a\u3082\u65e9\u304f\u6765\u308b\u5f8c\u8f29\u3068\u3001\u671d\u306e\u30b0\u30e9\u30a6\u30f3\u30c9\u3067\u904e\u3054\u3059\u8a71\u3002",B.aQ,"\u597d\u611f\u5ea6 60 \u4ee5\u4e0a\u306e\u7d50\u672b\u306b\u5230\u9054\u3059\u308b\u3068\u89e3\u653e",!1)
-B.Ve=new A.hq("shiori","\u681e\u3068\u3001\u56f3\u66f8\u5ba4\u306e\u671d","\u681e","Shiori","shiori","\u958b\u9928\u524d\u306e\u56f3\u66f8\u5ba4\u306f\u3001\u9375\u304c\u304b\u304b\u3063\u3066\u3044\u306a\u3044\u3002","\u59cb\u696d\u524d\u306e\u56f3\u66f8\u5ba4\u3067\u3001\u3044\u3064\u3082\u540c\u3058\u5e2d\u306b\u3044\u308b\u4eba\u306e\u8a71\u3002",B.c9,"\u4e03\u65e5\u9023\u7d9a\u3067\u96fb\u8eca\u306b\u4e57\u308b\u3068\u89e3\u653e",!1)
-B.Vf=new A.hq("mio","\u6faa\u306e\u59cb\u767a","\u6faa","Mio","mio","\u59cb\u767a\u306b\u4e57\u308b\u4eba\u306b\u306f\u3001\u7406\u7531\u304c\u3042\u308b\u3002","\u8ab0\u3088\u308a\u3082\u65e9\u3044\u96fb\u8eca\u306b\u4e57\u308b\u4eba\u306e\u8a71\u3002",B.di,"TRUE END \u306b\u5230\u9054\u3059\u308b\u3068\u89e3\u653e",!1)
-B.Vc=new A.hq("akari","\u3042\u304b\u308a\u306e\u671d\u7df4","\u3042\u304b\u308a","Akari","akari","\u671d\u65e5\u3088\u308a\u65e9\u304f\u3001\u97f3\u304c\u9cf4\u3063\u3066\u3044\u308b\u3002","\u5439\u594f\u697d\u90e8\u306e\u671d\u7df4\u306b\u3001\u6bce\u671d\u3072\u3068\u308a\u3067\u6765\u308b\u4eba\u306e\u8a71\u3002",B.bO,"\u8fd1\u65e5\u516c\u958b",!1)
-B.ly=s([B.Vg,B.Vd,B.Vb,B.Ve,B.Vf,B.Vc],A.as("w<hq>"))
 B.Pt=s(["click","scroll"],t.s)
 B.DB=new A.ra()
 B.iK=new A.NQ(1,"page")
